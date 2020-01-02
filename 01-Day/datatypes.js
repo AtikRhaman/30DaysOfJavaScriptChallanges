@@ -1,0 +1,5 @@
+console.log('=========== EX 4===========')
+console.log(typeof (myName))
+console.log(typeof (isMarid))
+console.log(typeof (fullName))
+console.log(typeof (ages))
