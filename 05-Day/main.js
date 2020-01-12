@@ -103,3 +103,44 @@ const middleInOfItcom2 = Math.floor(itCompanies2Index / 2)
 console.log(itCompanies2[middleInOfItcom2])
 console.log(itCompanies2.slice(0, 6))
 console.log(itCompanies2.slice(0, 0))
+
+//Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js ans store the webTechs array in to this file. Access both file in main.js file
+console.log(countries)
+console.log(webTechs)
+
+// First remove all the functions and change the string to array and count the number of words in the array
+
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+let convertToArr = text.split(' ')
+console.log(convertToArr)
+let countTheWords = convertToArr.length
+console.log(countTheWords)
+
+// In the following shopping cart add, remove, edit items
+console.log('=== addMeat ===')
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingCart.push('Sugger')
+console.log(shoppingCart)
+shoppingCart.unshift('Meat')
+console.log(shoppingCart)
+let indexOfHoney = shoppingCart.indexOf('Honey')
+console.log(indexOfHoney)
+let removeHuney = shoppingCart[4]
+shoppingCart.shift()
+console.log(shoppingCart)
+let indexOfTea = shoppingCart.indexOf('Tea')
+console.log(indexOfTea)
+shoppingCart[2] = 'Green Tea'
+console.log(shoppingCart)
+
+// In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+const hasEthiopia = countries.includes('Ethiopia')
+console.log(hasEthiopia)
+
+if (hasEthiopia = true) {
+    console.log('Ethiopia is avilable')
+} else {
+    console.log(countries.unshift())
+}
+
+// Exercise: Level 3
