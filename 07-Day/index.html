@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loops</title>
+  </head>
+
+  <body>
+    <script>
+      //Day 7: Functions
+      // Exercises: Level 1
+      console.log(
+        "Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name"
+      );
+      // Declare a function fullName and it print out your full name.
+      // Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
+
+      function fullName(firstname, lastname) {
+        let fullName = `${firstname} ${lastname}`;
+        console.log(fullName);
+      }
+      fullName("Atikur", "Rahman");
+      console.log(
+        "Declare a function addNumbers and it takes two two parameters and it returns sum."
+      );
+      // Declare a function addNumbers and it takes two two parameters and it returns sum.
+      function sumOfTwoNum(num1, num2) {
+        let sum = num1 + num2;
+        console.log(sum);
+      }
+      sumOfTwoNum(2, 2);
+      console.log(
+        "An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle."
+      );
+      // Write a function which calculates areaOfRectangle.
+      function areaOfRectangle(len, wid) {
+        let area = len * wid;
+        console.log(area);
+      }
+      areaOfRectangle(10, 10);
+
+      console.log("Write a function which calculates perimeterOfRectangle");
+      // Write a function which calculates perimeterOfRectangle.
+
+      function perimeterOfRectangle(len, wid) {
+        let parameter = 2 * (len + wid);
+        console.log(parameter);
+      }
+      perimeterOfRectangle(10, 10);
+      console.log("Write a function which calculates volumeOfRectPrism.");
+
+      function volumeOfRectPrism(len, wid, hei) {
+        let recPrism = len * wid * hei;
+        console.log(recPrism);
+      }
+      volumeOfRectPrism(10, 10, 10);
+
+      console.log("Write a function which calculates areaOfCircle");
+      //Write a function which calculates areaOfCircle
+      function areaOfCircle(r) {
+        let area = Math.PI * r * r;
+        console.log(area);
+      }
+      areaOfCircle(10);
+
+      console.log(" Write a function which calculates density.");
+      // Write a function which calculates density.
+      function density(mass, volume) {
+        let den = mass / volume;
+        console.log(den);
+      }
+      density(10, 1000);
+
+      console.log("Write a function which calculates weight.");
+      // Write a function which calculates weight.
+      function weight(mass, gravity) {
+        let weightOfSub = mass * gravity;
+        console.log(weightOfSub);
+      }
+      weight(64, 9.81);
+      console.log(
+        "Write a function which convert oC to oF convertCelciusToFahrenheit."
+      );
+      // Write a function which convert oC to oF convertCelciusToFahrenheit.
+      function convertCelciusToFahrenheit(oC) {
+        let oF = oC * (9 / 5) + 32;
+        console.log(oF);
+      }
+      convertCelciusToFahrenheit(-2);
+
+      console.log("Write a function which calculates bmi.");
+      //Write a function which calculates bmi.
+      function bmi(weight, height) {
+        let bmiOfperson = weight * (height * height);
+        console.log(bmiOfperson);
+      }
+      bmi(64, 1.70688);
+
+      console.log(
+        "Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer."
+      );
+      //Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
+      let month = "January";
+      switch (month) {
+        case "January":
+          console.log("Winter");
+          break;
+        case "March":
+          console.log("Autum");
+          break;
+        case "May":
+          console.log("Summer");
+          break;
+      }
+      console.log(
+        "Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method."
+      );
+      //Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+      function maxNumber(num1, num2, num3) {
+        console.log(Math.max(num1, num2, num3));
+      }
+      maxNumber(10, 20, 30);
+
+      // Exercises: Level 2
+      // 1. Discuse with vai
+      // 2. Discuse with vai
+
+      console.log(
+        "Declare a function name printArray. It takes array as a parameter and it prints out each value of the array."
+      );
+      //Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
+
+      const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      function printArray(array) {
+        console.log(array);
+      }
+      printArray(array);
+
+      console.log(
+        "Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object"
+      );
+      // Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+
+      function showDateTime() {
+        let d = new Date();
+        let m = d.getMonth();
+        let y = d.getFullYear();
+        let fullDate = `${d} / ${m} / ${y}`;
+        console.log(fullDate);
+      }
+      showDateTime();
+      console.log(
+        "Declare a function name swapValues. This function swaps value of x to y."
+      );
+      // Declare a function name swapValues. This function swaps value of x to y.
+      // 5. Discuse with vai
+
+      console.log(
+        "Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array"
+      );
+      // Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+      const countryFunc = () => {
+        const countries = ["Finland", "Sweden", "Denmark", "Norway", "Iceland"];
+        const newArr = [];
+        for (country of countries) {
+          let x = country.toUpperCase();
+          newArr.push(x);
+        }
+        console.log(newArr);
+      };
+
+      countryFunc();
+
+      const numbers = [1, 2, 3, 4, 5, 6];
+      let sumOfAllNum = numbers.reduce((acc, item) => acc + item);
+      console.log(sumOfAllNum);
+
+      function squire(n) {
+        return n * n;
+      }
+      console.log(squire(4));
+      const areaOfCircle2 = (r) => {
+        return Math.PI * r * r;
+      };
+      console.log(areaOfCircle2(4));
+
+      function fun2Par(...arr) {
+        return arr;
+      }
+      console.log(fun2Par(1, 2, 3, 4, 5, 6));
+      console.log(fun2Par(1, 2, 3, 4, 5, 6, 7, 8, 9));
+      const personAge = (born) => {
+        let year = new Date().getFullYear();
+        let age = year - born;
+        return age;
+      };
+      console.log(personAge(1990));
+
+      const numbersFun = (...numbers) => {
+        console.log(...numbers);
+      };
+      numbersFun(...numbers);
+
+      const printArry = () => {
+        for (const number of numbers) {
+          console.log("numbers", number);
+        }
+      };
+      printArray(numbers);
+
+      const timeDate = () => {
+        const monthNames = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        let currentDate = new Date();
+        let date = currentDate.getDate();
+        let month = monthNames[currentDate.getMonth()];
+        let years = currentDate.getFullYear();
+        let hours = currentDate.getHours();
+        let min = currentDate.getMinutes();
+        let sec = currentDate.getSeconds();
+        let fullDate =
+          month +
+          " " +
+          date +
+          ", " +
+          years +
+          " " +
+          hours +
+          ":" +
+          min +
+          ":" +
+          sec;
+        return fullDate;
+      };
+      console.log(timeDate());
+
+      const swapValue = (x, y) => {
+        var tmp = x;
+        x = y;
+        y = tmp;
+        console.log(x);
+        console.log(y);
+      };
+      console.log("Swap value", swapValue(10, 20));
+
+      // function swap(x, y) {
+      //   var t = x;
+      //   x = y;
+      //   y = t;
+      // }
+      // console.log(swap(3, 4));
+
+      const reverseArray = (arr) => {
+        var newArr = [];
+        for (var i = 0; i < arr.length; i++) {
+          newArr[i] = arr[arr.length - i - 1];
+        }
+        return newArr;
+      };
+      console.log(reverseArray([1, 2, 3, 4, 5, 6]));
+
+      const monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      const capitalizedArry = () => {
+        let newCapitalizedArry = [];
+        for (month of monthNames) {
+          newCapitalizedArry.push(month.toUpperCase());
+        }
+        return newCapitalizedArry;
+      };
+      console.log(capitalizedArry(...monthNames));
+      // Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+      const addItems = (item) => {
+        let arr = [1, 2, 3, 4, 5];
+        let newArr = [];
+        newArr.push(...arr, item);
+        console.log("From new arr", newArr);
+      };
+      addItems(6);
+    </script>
+  </body>
+</html>
